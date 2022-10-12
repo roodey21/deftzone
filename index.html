@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwindcss</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="">
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 py-4">
+                    <img src="dist/img/logo.png" class="max-h-12" alt="">
+                    <!-- <a href="#home" class="font-bold text-lg text-blue-100 block py-6">
+                        Deft Zone
+                    </a> -->
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg lg:shadow-none rounded-lg lg:rounded-none max-2-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base font-semibold text-teal-200 py-2 mx-5 flex group-hover:text-yellow-300">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base font-semibold text-teal-200 py-2 mx-5 flex group-hover:text-yellow-300">About Us</a>
+                            </li>
+                            <li class="group">
+                                <a href="#service" class="text-base font-semibold text-teal-200 py-2 mx-5 flex group-hover:text-yellow-300">Service</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section id="home" class="min-h-screen relative" style="background: url(./dist/img/bg-banner.png);">
+        <div class="container min-h-screen flex">
+            <div class="flex flex-wrap m-auto">
+                <div class="w-full self-center px-4">
+                    <h2 class="mb-3 text-lg font-semibold text-teal-100 text-justify tracking-tight">We are an IT solution agency based in Yogyakarta, Indonesia</h2>
+                    <p class="mb-8 text-2xl font-semibold text-slate-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloremque recusandae quisquam corporis laborum magni voluptate delectus. Voluptatum, mollitia illo?</p>
+                    <a href="#" class="py-3 px-8 bg-yellow-300 rounded-full text-teal-700 uppercase font-semibold">Learn More About Us</a>
+                </div>
+            </div>
+            <div class="absolute bottom-5 right-1/2">
+                <span class="text-white font-semibold">scroll down</span>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <section id="service" class="min-h-screen mb-12">
+        <div class="container mx-auto">
+            <div class="mx-5">
+                <h1 class="mt-12 text-3xl text-slate-800 font-semibold text-center mb-4" data-aos="fade-up">Our Offer to boost your company & bussiness</h1>
+            </div>
+            <div class="mt-12 mx-6">
+                <a  class="block border shadow-lg rounded-2xl p-6 mb-12 max-w-xs ml-auto mr-0" data-aos="fade-up">
+                    <img src="dist/img/coding-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <h2 class="text-center text-xl font-semibold text-teal-500 mb-4">Web Development</h2>
+                    <p class="text-slate-600 text-sm tracking-tight mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                </a>
+                <a class="block border shadow-lg rounded-2xl p-6 mb-12 max-w-xs ml-0 mr-auto" data-aos="fade-up">
+                    <img src="dist/img/network-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <h2 class="text-center text-xl font-semibold text-rose-500 mb-4">Networking</h2>
+                    <p class="text-slate-600 text-sm tracking-tight mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                </a>
+                <a class="block border shadow-lg rounded-2xl p-6 mb-12 max-w-xs ml-auto mr-0" data-aos="fade-up">
+                    <img src="dist/img/design-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <h2 class="text-center text-xl font-semibold text-indigo-500 mb-4">Graphic Design</h2>
+                    <p class="text-slate-600 text-sm tracking-tight mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                </a>
+                <a class="block border shadow-lg rounded-3xl p-6 mb-12 max-w-xs ml-0 mr-auto" data-aos="fade-up">
+                    <img src="dist/img/camera-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <h2 class="text-center text-xl font-semibold text-amber-500 mb-4">Photo & Video</h2>
+                    <p class="text-slate-600 text-sm tracking-tight mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                </a>
+            </div>
+            <div class="text-center mb-5">
+                <a href="#" class="uppercase bg-yellow-300 py-3 px-8 rounded-full shadow-lg font-semibold text-teal-700">See More Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <hr class="my-12"> -->
+
+    <section id="break-1" class="min-h-screen bg-gray-50">
+        <div class="container m-auto pt-24">
+            <div class="mx-5 mb-8">
+                <h1 class="text-3xl text-slate-600 font-semibold text-center mb-4">Evolve Your Bussiness</h1>
+                <h2 class="text-lg text-slate-400 font-medium text-center tracking-tight mb-8">Lets upgrade your bussiness into digital bussiness to compete on industry 4.0 .</h2>
+            </div>
+            <div class="bg-white shadow-xl rounded-tl-3xl overflow-hidden max-w-sm">
+                <img src="dist/img/banner.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-12">
+
+    <section id="team" class="min-h-screen flex">
+        <div class="container mx-auto align-middle">
+            <h1 class="mt-12 text-3xl text-slate-800 font-semibold text-center mx-5 mb-4">Work with some amazing partner</h1>
+            <div class="slider">
+
+            </div>
+        </div>
+    </section>
+    <!-- about section start -->
+    <!-- <section id="about" class="py-10">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 self-center px-4">
+                    <div class="flex flex-wrap text-center">
+                        <div class="w-full md:w-1/3 self-center px-2 mb-4">
+                            <div class="block py-10 rounded shadow bg-white mx-auto border max-w-sm text-center">
+                                <img class="mb-10 mx-auto w-1/2" src="dist/img/coding.png" alt="">
+                                <h1 class="font-semibold">Development</h1>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 self-center px-2">
+                            <div class="w-full mb-4">
+                                <div class="block py-10 rounded shadow bg-white mx-auto border max-w-sm text-center">
+                                    <img class="mb-10 mx-auto w-1/2" src="dist/img/design.png" alt="">
+                                    <h1 class="font-semibold">Design</h1>
+                                </div>
+                            </div>
+                            <div class="w-full mb-4">
+                                <div class="block py-10 rounded shadow bg-primary mx-auto border max-w-sm text-center">
+                                    <img class="mb-10 mx-auto w-1/2" src="dist/img/camera-light.png" alt="">
+                                    <h1 class="font-semibold text-white">Photography</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 self-center px-2 mb-4">
+                            <div class="block py-10 rounded shadow bg-white mx-auto border max-w-sm text-center">
+                                <img class="mb-10 mx-auto w-1/2" src="dist/img/computer.png" alt="">
+                                <h1 class="font-semibold">Networking</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 self-center px-4 mt-10">
+                    <h1 class="mb-5 text-4xl font-bold">Who we are.</h1>
+                    <p class="mb-10 text-base font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempore ullam modi dolor enim fuga</p>
+                    <a href="#" class="py-3 px-8 bg-primary rounded-full text-white">Read more ></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- about section end -->
+
+    <!-- team section start -->
+    <!-- <section id="team">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 self-center px-4 mt-10">
+                    <h1 class="mb-5 text-4xl font-bold">Meet our team.</h1>
+                    <p class="mb-10 text-base font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil accusamus, voluptatibus totam reiciendis modi quos pariatur cum, illum adipisci iusto autem cupiditate. Ex, error tempora! Necessitatibus hic, fuga placeat ab minima assumenda maiores qui beatae ullam sint in molestiae, quae rerum iste consequuntur. Quasi ratione rem deserunt commodi quia.</p>
+                    <a href="#" class="py-3 px-8 bg-primary rounded-full text-white">See more ></a>
+                </div>
+                <div class="w-full lg:w-1/2 self-center mt-10">
+                    <div class="flex flex-wrap">
+                        <div class="w-full lg:w-1/2 self-center">
+                            <div class="block rounded shadow bg-white mx-4 mb-4 border max-w-sm text-center">
+                                <div class="card-body py-14">
+                                    <div class="h-24 w-24 mx-auto bg-primary mb-4 rounded-full">
+                                        <img src="dist/img/teams/team-1.png" alt="">
+                                    </div>
+                                    <h1 class="font-medium text-base text-gray-600">
+                                        Nicholas Brook
+                                    </h1>
+                                    <h2 class="font-semibold text-lg text-gray-600">
+                                        Network Engineer
+                                    </h2>
+                                </div>
+                                <div class="card-footer p-4 border-t-2">
+                                    <div class="flex flex-wrap justify-between mx-4">
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_77)">
+                                                    <path
+                                                        d="M20.6537 17.25L21.2094 13.6306H17.7362V11.2819C17.7362 10.2919 18.2212 9.32624 19.7769 9.32624H21.3556V6.24499C21.3556 6.24499 19.9231 6.00061 18.5531 6.00061C15.6931 6.00061 13.8237 7.73436 13.8237 10.8725V13.6312H10.6444V17.2506H13.8237V26.0006H17.7362V17.2506L20.6537 17.25Z"
+                                                        fill="#1877F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1877F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_77">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_81)">
+                                                    <path
+                                                        d="M25.9606 9.80818C25.2121 10.1373 24.4192 10.3546 23.6075 10.4532C24.4632 9.93962 25.1037 9.1334 25.4106 8.18381C24.6013 8.65319 23.7204 8.98657 22.8031 9.17068C22.1863 8.5116 21.3691 8.07451 20.4785 7.92725C19.5879 7.77998 18.6736 7.93076 17.8774 8.35621C17.0812 8.78165 16.4477 9.45796 16.0751 10.2802C15.7026 11.1025 15.6118 12.0247 15.8169 12.9038C12.4087 12.7444 9.3875 11.1069 7.36687 8.63318C6.99905 9.25874 6.80667 9.97189 6.81 10.6976C6.8095 11.3722 6.97559 12.0364 7.29352 12.6314C7.61146 13.2264 8.0714 13.7337 8.6325 14.1082C7.98226 14.0885 7.34619 13.9134 6.7775 13.5976V13.6469C6.7773 14.5938 7.1045 15.5117 7.70366 16.2449C8.30281 16.9781 9.13705 17.4816 10.065 17.6701C9.7135 17.764 9.35133 17.8121 8.9875 17.8132C8.72437 17.8132 8.47312 17.7876 8.2225 17.7413C8.48658 18.5561 8.99813 19.2684 9.68594 19.7788C10.3738 20.2893 11.2036 20.5727 12.06 20.5894C10.609 21.7258 8.81862 22.3422 6.97562 22.3401C6.64919 22.3414 6.32297 22.323 5.99875 22.2851C7.87881 23.4897 10.0652 24.1292 12.2981 24.1276C19.84 24.1276 23.9613 17.8807 23.9613 12.4707C23.9613 12.2982 23.9612 12.1226 23.9481 11.9463C24.7543 11.3685 25.4491 10.6494 25.9987 9.82381L25.9606 9.80818Z"
+                                                        fill="#1DA1F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1DA1F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_81">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_85)">
+                                                    <path
+                                                        d="M19.7367 15.98L24.8625 11.5267V20.3825L19.7367 15.98ZM13.1317 16.7342L14.9317 18.2967C15.2142 18.5367 15.5825 18.6817 15.985 18.6817H15.9992H15.9983H16.01C16.4133 18.6817 16.7817 18.5359 17.0675 18.2942L17.065 18.2959L18.865 16.7334L24.3367 21.4325H7.6625L13.1317 16.7342ZM7.655 10.4709H24.3467L16.3292 17.4342C16.239 17.5055 16.1274 17.5443 16.0125 17.5442H16.0008H16.0017H15.99C15.8747 17.5444 15.7627 17.5053 15.6725 17.4334L15.6733 17.4342L7.655 10.4709ZM7.1375 11.5259L12.2625 15.9792L7.1375 20.3792V11.5259ZM25.1375 9.49171C24.9375 9.39171 24.7025 9.33337 24.4533 9.33337H7.54917C7.30763 9.33343 7.06942 9.38963 6.85333 9.49754L6.8625 9.49337C6.60381 9.62097 6.38596 9.81836 6.23355 10.0632C6.08113 10.3081 6.00024 10.5908 6 10.8792V21.0225C6.00044 21.433 6.16371 21.8266 6.45398 22.1169C6.74426 22.4072 7.13783 22.5704 7.54833 22.5709H24.4508C24.8613 22.5704 25.2549 22.4072 25.5452 22.1169C25.8355 21.8266 25.9987 21.433 25.9992 21.0225V10.8792C25.9992 10.2734 25.65 9.74837 25.1417 9.49587L25.1325 9.49171H25.1375Z"
+                                                        fill="#DD4B39" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#DD4B39" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_85">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 self-center">
+                            <div class="block rounded shadow bg-white mx-4 border max-w-sm text-center mb-4">
+                                <div class="card-body py-14">
+                                    <div class="h-24 w-24 mx-auto bg-primary mb-4 rounded-full">
+                                        <img src="dist/img/teams/team-1.png" alt="">
+                                    </div>
+                                    <h1 class="font-medium text-base text-gray-600">
+                                        Nicholas Brook
+                                    </h1>
+                                    <h2 class="font-semibold text-lg text-gray-600">
+                                        Network Engineer
+                                    </h2>
+                                </div>
+                                <div class="card-footer p-4 border-t-2">
+                                    <div class="flex flex-wrap justify-between mx-4">
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_77)">
+                                                    <path
+                                                        d="M20.6537 17.25L21.2094 13.6306H17.7362V11.2819C17.7362 10.2919 18.2212 9.32624 19.7769 9.32624H21.3556V6.24499C21.3556 6.24499 19.9231 6.00061 18.5531 6.00061C15.6931 6.00061 13.8237 7.73436 13.8237 10.8725V13.6312H10.6444V17.2506H13.8237V26.0006H17.7362V17.2506L20.6537 17.25Z"
+                                                        fill="#1877F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1877F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_77">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_81)">
+                                                    <path
+                                                        d="M25.9606 9.80818C25.2121 10.1373 24.4192 10.3546 23.6075 10.4532C24.4632 9.93962 25.1037 9.1334 25.4106 8.18381C24.6013 8.65319 23.7204 8.98657 22.8031 9.17068C22.1863 8.5116 21.3691 8.07451 20.4785 7.92725C19.5879 7.77998 18.6736 7.93076 17.8774 8.35621C17.0812 8.78165 16.4477 9.45796 16.0751 10.2802C15.7026 11.1025 15.6118 12.0247 15.8169 12.9038C12.4087 12.7444 9.3875 11.1069 7.36687 8.63318C6.99905 9.25874 6.80667 9.97189 6.81 10.6976C6.8095 11.3722 6.97559 12.0364 7.29352 12.6314C7.61146 13.2264 8.0714 13.7337 8.6325 14.1082C7.98226 14.0885 7.34619 13.9134 6.7775 13.5976V13.6469C6.7773 14.5938 7.1045 15.5117 7.70366 16.2449C8.30281 16.9781 9.13705 17.4816 10.065 17.6701C9.7135 17.764 9.35133 17.8121 8.9875 17.8132C8.72437 17.8132 8.47312 17.7876 8.2225 17.7413C8.48658 18.5561 8.99813 19.2684 9.68594 19.7788C10.3738 20.2893 11.2036 20.5727 12.06 20.5894C10.609 21.7258 8.81862 22.3422 6.97562 22.3401C6.64919 22.3414 6.32297 22.323 5.99875 22.2851C7.87881 23.4897 10.0652 24.1292 12.2981 24.1276C19.84 24.1276 23.9613 17.8807 23.9613 12.4707C23.9613 12.2982 23.9612 12.1226 23.9481 11.9463C24.7543 11.3685 25.4491 10.6494 25.9987 9.82381L25.9606 9.80818Z"
+                                                        fill="#1DA1F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1DA1F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_81">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_85)">
+                                                    <path
+                                                        d="M19.7367 15.98L24.8625 11.5267V20.3825L19.7367 15.98ZM13.1317 16.7342L14.9317 18.2967C15.2142 18.5367 15.5825 18.6817 15.985 18.6817H15.9992H15.9983H16.01C16.4133 18.6817 16.7817 18.5359 17.0675 18.2942L17.065 18.2959L18.865 16.7334L24.3367 21.4325H7.6625L13.1317 16.7342ZM7.655 10.4709H24.3467L16.3292 17.4342C16.239 17.5055 16.1274 17.5443 16.0125 17.5442H16.0008H16.0017H15.99C15.8747 17.5444 15.7627 17.5053 15.6725 17.4334L15.6733 17.4342L7.655 10.4709ZM7.1375 11.5259L12.2625 15.9792L7.1375 20.3792V11.5259ZM25.1375 9.49171C24.9375 9.39171 24.7025 9.33337 24.4533 9.33337H7.54917C7.30763 9.33343 7.06942 9.38963 6.85333 9.49754L6.8625 9.49337C6.60381 9.62097 6.38596 9.81836 6.23355 10.0632C6.08113 10.3081 6.00024 10.5908 6 10.8792V21.0225C6.00044 21.433 6.16371 21.8266 6.45398 22.1169C6.74426 22.4072 7.13783 22.5704 7.54833 22.5709H24.4508C24.8613 22.5704 25.2549 22.4072 25.5452 22.1169C25.8355 21.8266 25.9987 21.433 25.9992 21.0225V10.8792C25.9992 10.2734 25.65 9.74837 25.1417 9.49587L25.1325 9.49171H25.1375Z"
+                                                        fill="#DD4B39" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#DD4B39" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_85">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block rounded shadow bg-white mx-4 border max-w-sm text-center mb-4">
+                                <div class="card-body py-14">
+                                    <div class="h-24 w-24 mx-auto bg-primary mb-4 rounded-full">
+                                        <img src="dist/img/teams/team-1.png" alt="">
+                                    </div>
+                                    <h1 class="font-medium text-base text-gray-600">
+                                        Nicholas Brook
+                                    </h1>
+                                    <h2 class="font-semibold text-lg text-gray-600">
+                                        Network Engineer
+                                    </h2>
+                                </div>
+                                <div class="card-footer p-4 border-t-2">
+                                    <div class="flex flex-wrap justify-between mx-4">
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_77)">
+                                                    <path
+                                                        d="M20.6537 17.25L21.2094 13.6306H17.7362V11.2819C17.7362 10.2919 18.2212 9.32624 19.7769 9.32624H21.3556V6.24499C21.3556 6.24499 19.9231 6.00061 18.5531 6.00061C15.6931 6.00061 13.8237 7.73436 13.8237 10.8725V13.6312H10.6444V17.2506H13.8237V26.0006H17.7362V17.2506L20.6537 17.25Z"
+                                                        fill="#1877F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1877F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_77">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_81)">
+                                                    <path
+                                                        d="M25.9606 9.80818C25.2121 10.1373 24.4192 10.3546 23.6075 10.4532C24.4632 9.93962 25.1037 9.1334 25.4106 8.18381C24.6013 8.65319 23.7204 8.98657 22.8031 9.17068C22.1863 8.5116 21.3691 8.07451 20.4785 7.92725C19.5879 7.77998 18.6736 7.93076 17.8774 8.35621C17.0812 8.78165 16.4477 9.45796 16.0751 10.2802C15.7026 11.1025 15.6118 12.0247 15.8169 12.9038C12.4087 12.7444 9.3875 11.1069 7.36687 8.63318C6.99905 9.25874 6.80667 9.97189 6.81 10.6976C6.8095 11.3722 6.97559 12.0364 7.29352 12.6314C7.61146 13.2264 8.0714 13.7337 8.6325 14.1082C7.98226 14.0885 7.34619 13.9134 6.7775 13.5976V13.6469C6.7773 14.5938 7.1045 15.5117 7.70366 16.2449C8.30281 16.9781 9.13705 17.4816 10.065 17.6701C9.7135 17.764 9.35133 17.8121 8.9875 17.8132C8.72437 17.8132 8.47312 17.7876 8.2225 17.7413C8.48658 18.5561 8.99813 19.2684 9.68594 19.7788C10.3738 20.2893 11.2036 20.5727 12.06 20.5894C10.609 21.7258 8.81862 22.3422 6.97562 22.3401C6.64919 22.3414 6.32297 22.323 5.99875 22.2851C7.87881 23.4897 10.0652 24.1292 12.2981 24.1276C19.84 24.1276 23.9613 17.8807 23.9613 12.4707C23.9613 12.2982 23.9612 12.1226 23.9481 11.9463C24.7543 11.3685 25.4491 10.6494 25.9987 9.82381L25.9606 9.80818Z"
+                                                        fill="#1DA1F2" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#1DA1F2" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_81">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="social">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_108_85)">
+                                                    <path
+                                                        d="M19.7367 15.98L24.8625 11.5267V20.3825L19.7367 15.98ZM13.1317 16.7342L14.9317 18.2967C15.2142 18.5367 15.5825 18.6817 15.985 18.6817H15.9992H15.9983H16.01C16.4133 18.6817 16.7817 18.5359 17.0675 18.2942L17.065 18.2959L18.865 16.7334L24.3367 21.4325H7.6625L13.1317 16.7342ZM7.655 10.4709H24.3467L16.3292 17.4342C16.239 17.5055 16.1274 17.5443 16.0125 17.5442H16.0008H16.0017H15.99C15.8747 17.5444 15.7627 17.5053 15.6725 17.4334L15.6733 17.4342L7.655 10.4709ZM7.1375 11.5259L12.2625 15.9792L7.1375 20.3792V11.5259ZM25.1375 9.49171C24.9375 9.39171 24.7025 9.33337 24.4533 9.33337H7.54917C7.30763 9.33343 7.06942 9.38963 6.85333 9.49754L6.8625 9.49337C6.60381 9.62097 6.38596 9.81836 6.23355 10.0632C6.08113 10.3081 6.00024 10.5908 6 10.8792V21.0225C6.00044 21.433 6.16371 21.8266 6.45398 22.1169C6.74426 22.4072 7.13783 22.5704 7.54833 22.5709H24.4508C24.8613 22.5704 25.2549 22.4072 25.5452 22.1169C25.8355 21.8266 25.9987 21.433 25.9992 21.0225V10.8792C25.9992 10.2734 25.65 9.74837 25.1417 9.49587L25.1325 9.49171H25.1375Z"
+                                                        fill="#DD4B39" />
+                                                </g>
+                                                <circle cx="16" cy="16" r="15.5" stroke="#DD4B39" />
+                                                <defs>
+                                                    <clipPath id="clip0_108_85">
+                                                        <rect width="20" height="20" fill="white" transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- team section end -->
+
+    <!-- <section id="client">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="client">
+                        <div class="client-title">
+                            <h2>Our Clients</h2>
+                        </div>
+                        <div class="client-logo">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="client-logo-img">
+                                        <img src="images/client-logo-6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section id="new-section" class="mt-16">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-1/2 self-center px-2">
+                    <h1 class="font-bold text-6xl mb-8 text-slate-700">Deft Zone Indonesia.</h1>
+                    <p class="font-semibold text-lg mb-8 text-slate-600">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore soluta, dignissimos quis facere accusantium debitis voluptate eius, ratione voluptatum velit cum illum exercitationem minus doloribus quos tenetur, reprehenderit harum eum?
+                    </p>
+                    <button class="py-3 px-6 bg-sky-600 text-base font-semibold text-sky-100 rounded-full">Get Started</button>
+                </div>
+                <div class="w-1/2 self-end">
+                    <img src="dist/img/banner-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="mt-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-1/2">
+                    <div class="card-group flex">
+                        <div class="w-1/3 border-red-500">
+                            <div class="bg-slate-100 mx-2 h-52">
+                                <img src="dist/img/camera.png" class="" alt="">
+                                <div>
+                                    <h2>Photography</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/3 border-red-500">
+                            <div class="block bg-slate-100 mx-2">
+                                card 2
+                            </div>
+                            <div class="block bg-slate-100 mx-2">
+                                card 3
+                            </div>
+                        </div>
+                        <div class="w-1/3 border-red-500">
+                            <div class="block bg-slate-100">
+                                card-4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
