@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="dist/js/tiny-slider/tiny-slider.css">
-    <link rel="stylesheet" href="dist/icons.css">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="./icons.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body class="">
     <!-- header start -->
@@ -22,16 +22,17 @@
     <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
         <div id="nav-menu" class="fixed z-20 flex items-center self-start justify-center hidden w-screen h-screen duration-700 md:hidden bg-sky-600">
             <div class="flex flex-col space-y-3 text-xl font-light text-center text-white font-karla">
-                <a class="font-normal duration-300 hover:text-amber-300" href="#">Home</a>
-                <a class="font-normal duration-300 hover:text-amber-300" href="#">About Us</a>
-                <a class="font-normal duration-300 hover:text-amber-300" href="#">Service</a>
-                <a class="font-normal duration-300 hover:text-amber-300" href="#">Contact Us</a>
+                <a class="font-normal duration-300 hover:text-amber-300" href="index.html#">Home</a>
+                <a class="font-normal duration-300 hover:text-amber-300" href="index.html#about">About Us</a>
+                <a class="font-normal duration-300 hover:text-amber-300" href="index.html#service">Service</a>
+                <a class="font-normal duration-300 hover:text-amber-300" href="index.html#blog">Blog</a>
+                <a class="font-normal duration-300 hover:text-amber-300" href="index.html#contact">Contact Us</a>
             </div>
         </div>
         <div class="container">
             <div class="relative flex items-center justify-between">
                 <div class="px-4 py-4">
-                    <img src="dist/img/logo.png" class="max-h-12" alt="">
+                    <img src="./img/logo.png" class="max-h-12" alt="">
                     <!-- <a href="#home" class="block py-6 text-lg font-bold text-blue-100">
                         Deft Zone
                     </a> -->
@@ -46,16 +47,19 @@
                     <nav class="hidden absolute py-5 bg-white shadow-lg lg:shadow-none rounded-lg lg:rounded-none max-2-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent">
                         <ul class="block lg:flex font-karla">
                             <li class="group">
-                                <a href="#home" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Home</a>
+                                <a href="index.html#home" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">About Us</a>
+                                <a href="index.html#about" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">About Us</a>
                             </li>
                             <li class="group">
-                                <a href="#service" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Service</a>
+                                <a href="index.html#service" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Service</a>
                             </li>
                             <li class="group">
-                                <a href="#service" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Contact</a>
+                                <a href="index.html#blog" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="index.html#contact" class="flex py-2 mx-5 text-sm font-semibold uppercase text-teal-50 group-hover:text-amber-300">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,7 +70,7 @@
     <!-- header end -->
 
     <!-- hero section start -->
-    <section id="home" class="relative min-h-screen" style="background: url(./dist/img/bg-banner.png);">
+    <section id="home" class="relative min-h-screen" style="background: url(./img/bg-banner.png);">
         <div class="container flex min-h-screen">
             <div class="flex flex-wrap m-auto">
                 <div class="self-center w-full px-4">
@@ -82,12 +86,12 @@
     </section>
     <!-- hero section end -->
 
-    <section id="about" class="mb-12">
-        <div class="container mt-16 md:mt-24">
+    <section id="about" class="pt-16 md:pt-24">
+        <div class="container">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="order-1 md:col-span-6 md:order-2" data-aos="fade-up">
                     <div class="lg:ml-8">
-                        <img src="dist/img/shape-image.png" alt="">
+                        <img src="./img/shape-image.png" alt="">
                     </div>
                 </div>
     
@@ -104,7 +108,8 @@
             </div>
         </div>
     </section>
-    <section id="service" class="min-h-screen pt-12 mb-12 lg:min-h-min">
+
+    <section id="service" class="min-h-screen pt-16 md:pt-24 md:min-h-min">
         <div class="container mx-auto">
             <div class="mx-5" data-aos="fade-up">
                 <div class="grid grid-cols-1 pb-8 text-center">
@@ -115,22 +120,22 @@
             </div>
             <div class="gap-8 mx-6 mt-12 lg:flex">
                 <a class="block max-w-xs p-6 mb-12 ml-auto mr-0 bg-white border shadow-lg group hover:bg-teal-500 rounded-2xl" data-aos="fade-up">
-                    <img src="dist/img/coding-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <img src="./img/coding-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
                     <h2 class="mb-4 text-xl font-semibold text-center text-teal-500 group-hover:text-slate-50">Web Development</h2>
                     <p class="mb-4 text-sm tracking-tight group-hover:text-slate-50 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </a>
                 <a class="block max-w-xs p-6 mb-12 ml-0 mr-auto border shadow-lg group hover:bg-rose-500 rounded-2xl" data-aos="fade-up">
-                    <img src="dist/img/network-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <img src="./img/network-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
                     <h2 class="mb-4 text-xl font-semibold text-center group-hover:text-slate-50 text-rose-500">Networking</h2>
                     <p class="mb-4 text-sm tracking-tight group-hover:text-slate-50 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </a>
                 <a class="block max-w-xs p-6 mb-12 ml-auto mr-0 border shadow-lg group hover:bg-indigo-500 rounded-2xl" data-aos="fade-up">
-                    <img src="dist/img/design-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <img src="./img/design-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
                     <h2 class="mb-4 text-xl font-semibold text-center text-indigo-500 group-hover:text-slate-50">Graphic Design</h2>
                     <p class="mb-4 text-sm tracking-tight group-hover:text-slate-50 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </a>
                 <a class="block max-w-xs p-6 mb-12 ml-0 mr-auto border shadow-lg group hover:bg-amber-500 rounded-3xl" data-aos="fade-up">
-                    <img src="dist/img/camera-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
+                    <img src="./img/camera-color.png" class="w-16 h-16 mx-auto mb-4" alt="">
                     <h2 class="mb-4 text-xl font-semibold text-center group-hover:text-slate-50 text-amber-500">Photo & Video</h2>
                     <p class="mb-4 text-sm tracking-tight group-hover:text-slate-50 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </a>
@@ -138,7 +143,7 @@
         </div>
     </section>
 
-    <section id="team" class="relative py-12 md:py-16">
+    <section id="team" class="relative pt-14 md:pt-24">
         <div class="container">
             <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
                 <h6 class="mb-4 text-base font-medium text-indigo-600">We believe in building each other and hence</h6>
@@ -151,7 +156,7 @@
                 <div class="tiny-two-item">
                     <div class="tiny-slide">
                         <div class="relative p-6 m-2 overflow-hidden rounded-lg shadow-lg lg:flex lg:p-0 dark:shadow-gray-800">
-                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="dist/img/teams/01.jpg" alt="" width="384" height="512">
+                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="./img/teams/01.jpg" alt="" width="384" height="512">
                             <div class="pt-6 space-y-4 text-center lg:p-6 lg:text-left">
                                 <p class="text-base text-slate-400"> " Sometimes it is not enough to do our best, <br> we must do what is required. " </p>
                                 
@@ -164,7 +169,7 @@
                     </div>
                     <div class="tiny-slide">
                         <div class="relative p-6 m-2 overflow-hidden rounded-lg shadow-lg lg:flex lg:p-0 dark:shadow-gray-800">
-                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="dist/img/teams/02.jpg" alt="" width="384" height="512">
+                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="./img/teams/02.jpg" alt="" width="384" height="512">
                             <div class="pt-6 space-y-4 text-center lg:p-6 lg:text-left">
                                 <p class="text-base text-slate-400"> " You could leave life right now. Let that determine what you do and say and think. " </p>
                                 
@@ -177,7 +182,7 @@
                     </div>
                     <div class="tiny-slide">
                         <div class="relative p-6 m-2 overflow-hidden rounded-lg shadow-lg lg:flex lg:p-0 dark:shadow-gray-800">
-                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="dist/img/teams/03.jpg" alt="" width="384" height="512">
+                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="./img/teams/03.jpg" alt="" width="384" height="512">
                             <div class="pt-6 space-y-4 text-center lg:p-6 lg:text-left">
                                 <p class="text-base text-slate-400"> " Habit is habit, and not to be flung out of the window by any man, but coaxed downstairs a step at a time. " </p>
                                 
@@ -190,7 +195,7 @@
                     </div>
                     <div class="tiny-slide">
                         <div class="relative p-6 m-2 overflow-hidden rounded-lg shadow-lg lg:flex lg:p-0 dark:shadow-gray-800">
-                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="dist/img/teams/04.jpg" alt="" width="384" height="512">
+                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="./img/teams/04.jpg" alt="" width="384" height="512">
                             <div class="pt-6 space-y-4 text-center lg:p-6 lg:text-left">
                                 <p class="text-base text-slate-400"> " Having knowledge but lacking the power to express it clearly is no better than never having any ideas at all. " </p>
                                 
@@ -203,7 +208,7 @@
                     </div>
                     <div class="tiny-slide">
                         <div class="relative p-6 m-2 overflow-hidden rounded-lg shadow-lg lg:flex lg:p-0 dark:shadow-gray-800">
-                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="dist/img/teams/05.jpg" alt="" width="384" height="512">
+                            <img class="w-24 h-24 mx-auto rounded-full lg:w-48 lg:h-auto lg:rounded-none" src="./img/teams/05.jpg" alt="" width="384" height="512">
                             <div class="pt-6 space-y-4 text-center lg:p-6 lg:text-left">
                                 <p class="text-base text-slate-400"> " A man is rich in proportion to the number of things he can afford to let alone. " </p>
                                 
@@ -221,7 +226,7 @@
     </section><!--end section-->
     
     <section id="blog" class="container">
-        <div class="mt-16 md:mt-24">
+        <div class="pt-16 md:pt-24">
             <div class="grid grid-cols-1 pb-4 text-center" data-aos="fade-up">
                 <h6 class="mb-2 text-base text-indigo-600">Blog</h6>
                 <h3 class="mb-6 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Blog Or News</h3>
@@ -231,7 +236,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-8 gap-[30px]" data-aos="fade-up">
                 <div class="relative overflow-hidden rounded-lg shadow-lg blog dark:shadow-gray-800">
-                    <img src="dist/img/blog/01.jpg" alt="">
+                    <img src="./img/blog/01.jpg" alt="">
 
                     <div class="p-6 content">
                         <a href="blog-detail.html" class="text-lg font-medium duration-500 ease-in-out title h5 hover:text-indigo-600">Design your apps in your own way</a>
@@ -244,7 +249,7 @@
                 </div>
 
                 <div class="relative overflow-hidden rounded-lg shadow-lg blog dark:shadow-gray-800">
-                    <img src="dist/img/blog/02.jpg" alt="">
+                    <img src="./img/blog/02.jpg" alt="">
 
                     <div class="p-6 content">
                         <a href="blog-detail.html" class="text-lg font-medium duration-500 ease-in-out title h5 hover:text-indigo-600">How apps is changing the IT world</a>
@@ -257,7 +262,7 @@
                 </div>
 
                 <div class="relative overflow-hidden rounded-lg shadow-lg blog dark:shadow-gray-800">
-                    <img src="dist/img/blog/03.jpg" alt="">
+                    <img src="./img/blog/03.jpg" alt="">
 
                     <div class="p-6 content">
                         <a href="blog-detail.html" class="text-lg font-medium duration-500 ease-in-out title h5 hover:text-indigo-600">Smartest Applications for Business</a>
@@ -272,22 +277,25 @@
         </div>
     </section>
 
-    <section id="contact" class="grid p-12">
+    <section id="contact" class="grid px-12 pt-16 mb-12 md:pt-24">
         <div class="grid grid-cols-1 pb-4 text-center" data-aos="fade-up">
             <h6 class="mb-2 text-base text-indigo-600">Contact</h6>
             <h3 class="mb-6 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Our Contact</h3>
 
             <!-- <p class="max-w-xl mx-auto text-slate-400">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p> -->
         </div><!--end grid-->
-        <div class="relative flex self-center justify-around w-full h-64 max-w-3xl mx-auto contact md:h-72 drop-shadow-lg" data-aos="fade-up">
+        <div class="relative flex self-center justify-around w-full h-64 mx-auto md:max-w-3xl contact md:h-72 drop-shadow-lg" data-aos="fade-up">
             <div class="absolute z-20 grid w-full h-full text-white place-content-center contact-cover md:w-1/2 p-7 -left-4 top-2 bg-sky-500 rounded-3xl">
                 <h1 class="mb-4 text-xl font-semibold md:text-3xl">Do you have digital project?</h1>
                 <p class="font-light text-md">Let’s have a talk, and see how together we can take your brand to the next level.</p>
+                <p class="mt-4 text-base font-semibold uppercase md:hidden text-end">
+                    <a href="javascript();" class="hover:text-yellow-300">Send a message &rarr;</a>
+                </p>
             </div>
             <div class="absolute z-10 w-full h-full overflow-hidden bg-white border contact-form border-slate-300 p-7 rounded-3xl" data-aos="fade-up">
                 <!-- <form action=""> -->
                     <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="order-2 contact-form-right md:pr-12">
+                        <div class="md:order-2 contact-form-right md:pr-12">
                             <div class="grid mb-4 form-group">
                                 <label for="name" class="text-xs font-normal uppercase">Name</label>
                                 <input class="px-1 py-2 border-b-2 autofill:bg-white border-slate-200 focus:outline-none focus:border-sky-500" type="text" name="name">
@@ -327,7 +335,7 @@
                         <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                             <div class="lg:col-span-4 md:col-span-12">
                                 <a href="#" class="text-[22px] focus:outline-none">
-                                    <img src="dist/img/logo.png" alt="">
+                                    <img src="./img/logo-dek.png" class="w-12" alt="">
                                 </a>
                                 <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
                             </div><!--end col-->
@@ -335,12 +343,12 @@
                             <div class="lg:col-span-4 md:col-span-4">
                                 <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
                                 <ul class="mt-6 list-none footer-list">
-                                    <li><a href="page-aboutus.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                    <li><a href="#about" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
                                     <li class="mt-[10px]"><a href="page-services.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
                                     <li class="mt-[10px]"><a href="portfolio-creative-four.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Project</a></li>
                                     <li class="mt-[10px]"><a href="blog.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
                                     <li class="mt-[10px]"><a href="blog.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Contact</a></li>
-                                    <li><a href="page-terms.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
+                                    <li class="mt-[10px]"><a href="blog.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
                                     <li class="mt-[10px]"><a href="page-privacy.html" class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
                                 </ul>
                             </div><!--end col-->
@@ -354,7 +362,7 @@
                                             <label class="form-label">Write your email <span class="text-red-600">*</span></label>
                                             <div class="relative mt-2 form-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute w-4 h-4 feather feather-mail top-3 left-4"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                                <input type="email" class="pl-12 text-gray-100 bg-gray-800 border border-gray-800 form-input focus:shadow-none" placeholder="Email" name="email" required="">
+                                                <input type="email" class="w-full py-2 pl-12 text-gray-100 bg-gray-800 border border-gray-800 focus:shadow-none" placeholder="Email" name="email" required="">
                                             </div>
                                         </div>
                                     
@@ -380,10 +388,10 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> -->
-    <script src="./dist/js/tiny-slider/min/tiny-slider.js"></script>
+    <script src="./js/tiny-slider/min/tiny-slider.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="dist/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

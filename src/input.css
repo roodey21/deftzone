@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply font-karla
+}
+
 .navbar-fixed {
-    @apply fixed z-[9999] bg-transparent ;
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+    @apply fixed z-[9999] bg-gradient-to-b from-white to-transparent ;
+    backdrop-filter: blur(1px);
+    /* box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); */
+}
+
+.navbar-fixed li a {
+    @apply text-sky-500
 }
 
 .hamburger-line {
@@ -22,4 +30,12 @@
 
 .hamburger-active > span:nth-child(2) {
     @apply scale-0;
+}
+
+.btn {
+    @apply py-4 px-8 rounded-full shadow uppercase text-sm font-semibold
+}
+
+.tiny-slide {
+    user-select: none;
 }

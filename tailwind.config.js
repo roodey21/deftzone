@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // content: ['index.html'],
-  content: ['index.html',"./node_modules/flowbite/**/*.js"],
+  content: ['index.html', './dist/*.html'],
   theme: {
+    fontFamily: {
+      'karla': ['Karla', 'sans-serif']
+    },
+    lineHeight: {
+      'extra-loose': '1.4'
+    },
     container: {
       center: true,
-      padding: '16px',
+      padding: {
+        DEFAULT: '16px',
+        sm: '1rem',
+        lg: '45px',
+        xl: '5rem'
+      },
     },
     extend: {
       colors: {
@@ -16,12 +27,9 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-  safelist: [
-    '!duration-0',
-    '!delay-0',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
-  ]
+  // safelist: [
+  //   '!duration-0',
+  //   '!delay-0',
+  //   'html.js :where([class*="taos:"]:not(.taos-init))'
+  // ]
 }
