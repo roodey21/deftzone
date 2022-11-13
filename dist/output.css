@@ -1461,7 +1461,7 @@ body {
   }
 }
 
-@media (min-width: 1026px) and (max-width: 1700px) {
+@media (min-width: 1026px) {
   #home {
     background-image: url(img/hero-section-xl.png);
   }
