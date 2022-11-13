@@ -28,7 +28,7 @@ contact.addEventListener("click", function () {
 window.onscroll = function () {
     const header = document.querySelector("header");
     const logo = document.getElementById('logo');
-    const fixedNav = header.offsetHeight;
+    const fixedNav = header.offsetTop;
 
     if(window.scrollY > fixedNav) {
         header.classList.add("navbar-fixed");
