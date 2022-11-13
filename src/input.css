@@ -42,18 +42,18 @@ body {
 
 @media (max-width: 480px) {
     #home {
-        background-image: url(../dist/img/hero-section-mobile.png);
+        background-image: url(./img/hero-section-mobile.png);
     }
 }
 
 @media (min-width: 481px) and (max-width: 1025px) {
     #home {
-        background-image: url(../dist/img/hero-section.png);
+        background-image: url(./img/hero-section.png);
     }
 }
 
 @media (min-width: 1026px) and (max-width: 1700px) {
     #home {
-        background-image: url(../dist/img/hero-section-xl.png);
+        background-image: url(./img/hero-section-xl.png);
     }
 }

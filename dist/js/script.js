@@ -32,9 +32,9 @@ window.onscroll = function () {
 
     if(window.scrollY > fixedNav) {
         header.classList.add("navbar-fixed");
-        logo.src = "../dist/img/logo.png";    
+        logo.src = "./img/logo.png";    
     } else {
-        logo.src = "../dist/img/logo-white.png";
+        logo.src = "./img/logo-white.png";
         header.classList.remove("navbar-fixed");
     }
 }
