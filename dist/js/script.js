@@ -27,11 +27,14 @@ contact.addEventListener("click", function () {
 // navbar fixed
 window.onscroll = function () {
     const header = document.querySelector("header");
-    const fixedNav = header.offsetTop;
+    const logo = document.getElementById('logo');
+    const fixedNav = header.offsetHeight;
 
-    if(window.pageYOffset > fixedNav) {
+    if(window.scrollY > fixedNav) {
         header.classList.add("navbar-fixed");
+        logo.src = "../dist/img/logo.png";    
     } else {
+        logo.src = "../dist/img/logo-white.png";
         header.classList.remove("navbar-fixed");
     }
 }
