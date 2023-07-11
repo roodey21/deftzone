@@ -19,7 +19,9 @@ navMenu.addEventListener("click", function() {
 contact.addEventListener("click", function () {
     cover.classList.remove("z-20");
     contact.classList.remove("h-64");
-    contact.style.height = "32rem";
+    if(screen.width < 481) {
+        contact.style.height = "32rem";
+    }
     formRight.classList.remove("md:order-2");
     formRight.classList.add("md:border-r");
 })
