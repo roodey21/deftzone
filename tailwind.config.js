@@ -4,7 +4,8 @@ module.exports = {
   content: ['index.html', './dist/*.html'],
   theme: {
     fontFamily: {
-      'karla': ['Karla', 'sans-serif']
+      'karla': ['Karla', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
     },
     lineHeight: {
       'extra-loose': '1.4'
