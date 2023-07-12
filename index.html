@@ -20,34 +20,37 @@
             <a href="#" class="block mr-24">
                 <img class="max-h-12" src="dist/img/logo.png" alt="logo">
             </a>
-            <ul class="flex flex-row items-center gap-10">
-                <li class="font-semibold uppercase"><a href="#">Home</a></li>
-                <li class="font-semibold uppercase"><a href="#">Services</a></li>
-                <li class="font-semibold uppercase"><a href="#">Portfolio</a></li>
-                <li class="font-semibold uppercase"><a href="#">Blog</a></li>
+            <ul class="items-center hidden gap-10 md:flex md:flex-row">
+                <li class="text-sm font-semibold uppercase"><a href="#">Home</a></li>
+                <li class="text-sm font-semibold uppercase"><a href="#">Services</a></li>
+                <li class="text-sm font-semibold uppercase"><a href="#">Portfolio</a></li>
+                <li class="text-sm font-semibold uppercase"><a href="#">Blog</a></li>
             </ul>
         </div>
-        <div class="flex nav-right">
+        <div class="hidden md:flex nav-right">
             <button class="px-5 py-3 transition-colors duration-300 border border-black rounded hover:bg-black hover:text-white hover:border-white">
                 Get Started
             </button>
         </div>
     </nav>
     <!-- Header -->
-    <div class="container flex bg-right-bottom bg-no-repeat" style="background-image: url('/dist/img/bg-header.png');">
-        <div class="w-1/2 my-20">
-            <h2 class="text-6xl font-bold">Work With The Best Marketers For Your Business</h2>
+    <div class="container flex flex-col bg-right-bottom bg-no-repeat bg-none md:bg-header md:flex-row">
+        <div class="w-full my-20 md:w-1/2">
+            <h2 class="text-4xl font-bold md:text-6xl">Work With The Best Marketers For Your Business</h2>
             <p class="text-lg font-medium">We digitally connect your brand with your target market in a desirable and refined manner.</p>
             <div class="flex gap-3 py-9">
                 <button class="px-5 py-3 font-medium text-white transition-colors bg-black border border-black rounded hover:bg-white hover:text-black">
                     Get Started
                 </button>
-                <a href="#_" class="relative px-6 py-3 text-black group">
+                <a href="#" class="relative px-6 py-3 text-black group">
                     <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1.5 translate-y-1.5 rounded bg-sky-400/50 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                     <span class="absolute inset-0 w-full h-full border-2 rounded border-sky-400"></span>
                     <span class="relative font-medium">Let's Talk</span>
                 </a>
             </div>
+        </div>
+        <div class="w-full md:hidden">
+            <img src="/dist/img/bg-header.png" alt="">
         </div>
     </div>
     <!-- Works -->

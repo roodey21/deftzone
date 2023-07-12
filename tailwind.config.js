@@ -25,6 +25,9 @@ module.exports = {
       },
       screens: {
         '2xl': '1320px',
+      },
+      backgroundImage: {
+        'header': "url('/dist/img/bg-header.png')",
       }
     },
   },
